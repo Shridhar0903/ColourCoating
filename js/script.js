@@ -82,6 +82,7 @@ function scrollRight() {
 // ===========================================================
 const track = document.getElementById("testimonialTrack");
 const groups = document.querySelectorAll(".testimonial-group");
+const dots = document.querySelectorAll(".dot"); // 👈 ADD THIS
 
 let testimonialIndex = 0; // ✅ changed name
 
@@ -93,7 +94,14 @@ function slideTestimonials() {
   }
 
   track.style.transform = `translateX(-${testimonialIndex * 100}%)`;
+  updateDots(); // 👈 ADD THIS
+}
+
+/* 👇 FUNCTION TO UPDATE DOT */
+function updateDots() {
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[testimonialIndex].classList.add("active");
 }
 
 /* Auto Slide every 5 sec */
-setInterval(slideTestimonials, 5000);
+setInterval(slideTestimonials, 3000);

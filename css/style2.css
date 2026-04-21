@@ -382,7 +382,7 @@
 .clients-marquee{
     display:flex;
     width:200%;              /* VERY IMPORTANT */
-    animation:scroll 20s linear infinite;
+    animation:scroll 10s linear infinite;
 }
 
 /* EACH BLOCK */
@@ -394,8 +394,8 @@
 
 /* LOGOS */
 .clients-slide img{
-    width:200px;
-    height:180px;
+    width:500px;
+    height:250px;
     object-fit:contain;
     opacity:0.6;
     filter:grayscale(100%);

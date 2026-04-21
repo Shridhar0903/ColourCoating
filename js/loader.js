@@ -1,26 +1,35 @@
-window.addEventListener("load", function () {
-  const loader = document.querySelector(".loader");
-  const main = document.querySelector(".main");
+// Select loader and main content
+const loader = document.querySelector(".loader"); // Loader screen
+const main = document.querySelector(".main"); // Main website content
 
-  // Show loader first, hide main
-  main.style.display = "none";
+// 🔑 Check if loader already shown in this session
+if (sessionStorage.getItem("loaderShown")) {
+  // 👉 If already shown → skip loader
+  loader.style.display = "none"; // Hide loader immediately
+  main.style.display = "block"; // Show main content
+  main.style.opacity = "1"; // Ensure visible
+} else {
+  // 👉 First time visit → show loader
+  sessionStorage.setItem("loaderShown", "true"); // Save flag
 
-  // Wait for few seconds (loader animation time)
-  setTimeout(() => {
-    // Fade out loader
-    loader.style.opacity = "0";
+  window.addEventListener("load", function () {
+    main.style.display = "none"; // Hide main content initially
 
+    // ⏳ Wait for loader animation time
     setTimeout(() => {
-      loader.style.display = "none";
+      loader.style.opacity = "0"; // Fade out loader
 
-      // Show main content
-      main.style.display = "block";
-
-      // Smooth fade-in
-      main.style.opacity = "0";
       setTimeout(() => {
-        main.style.opacity = "1";
-      }, 50);
-    }, 500);
-  }, 5000); // 👈 loader duration (2.5 sec)
-});
+        loader.style.display = "none"; // Remove loader
+
+        main.style.display = "block"; // Show main content
+
+        // ✨ Smooth fade-in effect
+        main.style.opacity = "0";
+        setTimeout(() => {
+          main.style.opacity = "1";
+        }, 50);
+      }, 500); // Time for fade-out animation
+    }, 3000); // ⏱ Loader duration (change if needed)
+  });
+}

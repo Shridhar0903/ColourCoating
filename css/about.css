@@ -1,0 +1,270 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+     width: 100%;
+     height: 100%;
+}
+.gradient-text {
+    background: linear-gradient(270deg, #c9a227, #f5d76e, #fff3b0);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientMove 3s linear infinite;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 200% }
+}
+/* ================= ABOUT HERO ================= */
+
+.about-hero {
+    position: relative;
+    height: 70vh;
+
+    background: url('../images/Coating3.jfif') no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+/* DARK OVERLAY (important for readability) */
+.about-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* CONTENT */
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    color: #fff;
+    padding: 20px;
+}
+
+/* HEADING */
+.about-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    
+    background: linear-gradient(45deg, var(--gold1), var(--gold2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Montserrat', sans-serif;
+}
+
+/* PARAGRAPH */
+.about-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ece9e9;
+    font-family:'Poppins', sans-serif;
+}
+
+
+/* =============================================================== */
+/* ================= ABOUT NEXT SECTION ================= */
+
+.about-next {
+    padding: 100px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(to right, #ffffff, #fffdfd);
+}
+
+/* SIDE IMAGE (LIKE LEAF STYLE) */
+.about-next::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+
+    background: url('../images/coating-shape.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.15;
+}
+
+/* HEADING */
+.about-next h2 {
+    font-size:50px;
+    color: #885406;
+    margin-bottom:20px;
+    position:relative;
+    z-index:1;
+    font-family:'Montserrat', sans-serif;
+   
+}
+
+/* DESCRIPTION */
+.about-desc {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    color: #020202;
+    line-height: 1.7;
+     font-family:'Poppins', sans-serif;
+}
+
+.about-desc span {
+    color: var(--gold1);
+    font-weight: 600;
+}
+
+/* TAGLINE */
+.tagline {
+    margin: 20px 0 60px;
+    color: var(--gold1);
+    font-style: italic;
+}
+
+/* CARDS CONTAINER */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.mv-card {
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+
+    background: #ffffff;
+    border-left: 4px solid var(--gold1);
+
+    text-align: left;
+    color: #000000;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.4s;
+}
+
+/* HOVER */
+.mv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(201,162,39,0.3);
+}
+
+/* TITLE */
+.mv-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--gold1);
+}
+
+/* TEXT */
+.mv-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* SPAN */
+.mv-card span {
+    color: var(--gold1);
+    font-weight: 600;
+}
+
+
+.coating-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 60px;
+    background: #eef2f6;
+    flex-wrap: wrap;
+}
+
+/* CARD BASE */
+.card {
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+/* COLORS (matching your theme) */
+.card:nth-child(1) {
+    background: linear-gradient(135deg, #c9a227, #f5d76e);
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(135deg, #0f5f8f, #1da1d2);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+}
+
+/* ICON */
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.icon i {
+    font-size: 28px;
+}
+
+/* TITLE */
+.card h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TEXT */
+.card p {
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* SUBTLE DECOR ICON */
+.card::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+}
