@@ -297,7 +297,7 @@ form textarea:focus {
 /* TITLE */
 .map-card h3 {
     font-size: 30px;
-    color: #3b4a8a;
+    color:var(--gold);
     margin-bottom: 10px;
      font-family:'Montserrat', sans-serif;
       

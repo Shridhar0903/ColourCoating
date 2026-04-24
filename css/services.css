@@ -1,0 +1,210 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+     width: 100%;
+     height: 100%;
+}
+:root{
+    --gold1:#c9a227;
+    --gold2:#f5d76e;
+    --gold3:#fff3b0;
+}
+
+.gradient-text {
+    background: linear-gradient(270deg, #c9a227, #f5d76e, #fff3b0);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientMove 3s linear infinite;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 200% }
+}
+
+/* ===== HERO SECTION ===== */
+.Services-hero {
+      position: relative;
+    height: 70vh;
+
+    background: url('../images/servi-bg.jpg') no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.Services-hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+}
+
+/* CONTENT */
+.Services-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    color: #fff;
+    padding: 20px;
+}
+
+/* TITLE */
+.Services-hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+        font-family:'Montserrat', sans-serif;
+}
+
+/* DESCRIPTION */
+.Services-hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ddd;
+        font-family:'Poppins', sans-serif;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #c9a227, #f5d76e);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .projects-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .projects-hero-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* ===== SECTION ===== */
+.services-section{
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 5%;
+    overflow: hidden;
+}
+
+/* ===== FIXED BACKGROUND IMAGE ===== */
+.bg-image{
+    position: fixed;   /* KEY POINT */
+    top: 0;
+    right: 60%;
+    width: 100%;
+    height: 100%;
+    background: url('../images/servicesbg.webp') no-repeat left center;
+    background-size: cover;
+    opacity: 0.4; /* transparent effect */
+    z-index: -1;
+}
+
+/* ===== CONTENT ===== */
+.services-container{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Heading */
+.services-container h2{
+    font-size: 40px;
+    color: #3b4f8c;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family:'Montserrat', sans-serif;
+}
+
+/* Subtitle */
+.subtitle{
+    color: #555;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+}
+
+/* ===== GRID ===== */
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* ===== CARD ===== */
+.service-card{
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service-card:hover{
+    transform: translateY(-10px);
+}
+
+/* Title */
+.service-card h3{
+    color:var(--gold1);
+    margin-bottom: 15px;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Text */
+.service-card p{
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+     font-family:'Poppins', sans-serif;
+}
+
+/* Button */
+.btn{
+      display: inline-block;
+    padding: 12px 25px;
+    background:var(--gold1);
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-family:'Poppins', sans-serif;
+}
+
+.btn:hover{
+     transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
