@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+     <!-- ================= NAVBAR ================= -->
+        <header class="navbar">
+            <div class="logo">
+                <img src="images/CC.png" alt="logo">
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html" >Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html" >Contact</a>
+            </nav>
+        </header>
+
+
+        <section class="projects-hero">
+
+            <div class="overlay"></div>
+
+            <div class="projects-hero-content">
+                <h1>Our Projects</h1>
+                <p>
+                    Explore our completed projects showcasing precision, durability, and excellence 
+                    in powder coating and surface treatment solutions.
+                </p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+
+        </section>
+
+        <section class="projects-intro">
+
+            <div class="projects-intro-content">
+    
+
+                <p>
+                    At <span class="gradient-text">Classic Coating Surface</span>, we deliver high-quality powder coating and surface treatment solutions 
+                    that enhance durability, protection, and finish. From industrial components to customized metal works, 
+                    our projects reflect precision, strength, and long-lasting performance.
+                </p>
+
+                <div class="btn-group">
+                    <a href="contact.html" class="btn primary">Contact Us</a>
+                    <a href="services.html" class="btn secondary">Our Services</a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="projects-section" id="projects">
+
+            <div class="projects-container">
+
+                <!-- PROJECT CARD -->
+                <div class="project-card" onclick="openLightbox('images/prj1.webp')">
+                    <img src="images/prj1.webp" alt="">
+                    <div class="project-info">
+                        <h3>Multi-Effect Evaporator</h3>
+                        <p>Bajaj Auto Ltd, Chakan</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openLightbox('images/prj2.webp')">
+                    <img src="images/prj2.webp" alt="">
+                    <div class="project-info">
+                        <h3>DAF System Installation</h3>
+                        <p>Mars International, Pune</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openLightbox('images/prj3.webp')">
+                    <img src="images/prj3.webp" alt="">
+                    <div class="project-info">
+                        <h3>Effluent Treatment Plant</h3>
+                        <p>100 KLD ETP & STP</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openLightbox('images/prj4.jfif')">
+                    <img src="images/prj4.jfif" alt="">
+                    <div class="project-info">
+                        <h3>Primary Clarifier</h3>
+                        <p>Bajaj Auto Ltd, Akurdi</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+         <!-- LIGHTBOX -->
+         <div class="lightbox" id="lightbox">
+             <span class="close" onclick="closeLightbox()">×</span>
+             <img id="lightbox-img">
+         </div>
+
+         <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- LEFT -->
+                <div class="footer-left">
+                    <img src="images/CC.png" alt="logo">
+
+                    <p>
+                        At <span class="gradient-text">Classic Coating Solutions</span>, we are committed to delivering 
+                        high-quality surface finishing and protection services through advanced coating technologies.
+                         We provide durable, cost-effective, and precision-based solutions including powder coating, sand blasting, and tank processing, 
+                        ensuring superior corrosion resistance, long-lasting performance, and flawless finishes for industrial and commercial applications.
+                    </p>
+                </div>
+
+              <!-- CENTER -->
+              <div class="footer-center">
+                  <h3>Contact Us</h3>
+
+                  <p>Office Address:<span class="gradient-text"><br>
+                  Shop No.16, SR.NO.441/1, Khadi Machine, Wadmukhwadi, Pune-412105</span></p>
+
+                  <p>Phone: <span class="gradient-text"><br>
+                      <a href="tel:+917083255495" class="call-btn">7083255495</a> /
+                           <a href="tel:+917057094498" class="call-btn">7057094498</a>
+
+                  </p>
+                  <p>Email: <span class="gradient-text"><br><a href="mailto:">sales@classicsurfacecoating.com</a></p>
+                    </div>
+
+                 <!-- RIGHT -->
+                 <div class="footer-right">
+                     <h3>Follow Us</h3>
+
+                     <div class="social-icons">
+                         <i class="fab fa-facebook-f"></i>
+                         <i class="fab fa-linkedin-in"></i>
+                         <i class="fab fa-instagram"></i>
+                         <i class="fab fa-x-twitter"></i>
+                     </div>
+                 </div>
+
+             </div>
+
+            <!-- BOTTOM BAR -->
+            <div class="footer-bottom">
+                 © 2026 Classic Surface Coating Technology-All Rights Reserved |
+            Developed By 
+            <a href="https://www.qirotec.com" target="_blank" class="qiro-link">
+                 QiroTech Innovation Pvt. Ltd.
+            </a>
+
+            </div>
+
+        </footer>
+
+
+<script src="js/script.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

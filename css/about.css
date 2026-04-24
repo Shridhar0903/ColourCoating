@@ -170,18 +170,21 @@ html,body{
     font-size: 24px;
     margin-bottom: 15px;
     color: var(--gold1);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* TEXT */
 .mv-card p {
     font-size: 15px;
     line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* SPAN */
 .mv-card span {
     color: var(--gold1);
     font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
 
