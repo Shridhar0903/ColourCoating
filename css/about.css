@@ -68,7 +68,7 @@ html,body{
 
 /* PARAGRAPH */
 .about-content p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.7;
     color: #ece9e9;
     font-family:'Poppins', sans-serif;
@@ -121,6 +121,7 @@ html,body{
     color: #020202;
     line-height: 1.7;
      font-family:'Poppins', sans-serif;
+     
 }
 
 .about-desc span {
